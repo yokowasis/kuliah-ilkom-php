@@ -2,6 +2,7 @@
   <head>
     <title>ILMU KOMPUTER</title>
     <link rel="stylesheet" type="text/css" href="EFEK.CSS" />
+    <link rel="stylesheet" type="text/css" href="table.css" />
     <style type="text/css">
       h1 {
         color: white;
@@ -11,10 +12,80 @@
         padding: 10px;
         margin: 50px;
       }
+      garisbawah {
+        font-size: 30px;
+        text-decoration: underline;
+      }
+      .right {
+        text-align: right;
+      }
+      #p115 {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+      }
+      body {
+        padding: 30px;
+      }
+      #boxgradient {
+        background: #ff0000; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(
+          #ff0000,
+          #ffffff
+        ); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(
+          #ff0000,
+          #ffffff
+        ); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(
+          #ff0000,
+          #ffffff
+        ); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#ff0000, #ffffff); /* Standard syntax */
+        width: 100%;
+        height: 100px;
+      }
+      #boxbg {
+        background: url("images/images.jpg");
+        width: 100%;
+        height: 100px;
+      }
     </style>
   </head>
   <body>
     <h1>UM BIMA</h1>
     <p style="padding: 20px; font-size: 30px">ILMU KOMPUTER UM BIMA</p>
+    <garisbawah><p>ini text garis bawah</p></garisbawah>
+    <p class="right">Align Right</p>
+    <p id="p115">P dengan ID = p115</p>
+    <div id="boxgradient"></div>
+    <div id="boxbg"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Satu</th>
+          <th>Dua</th>
+          <th>Tiga</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr class="even">
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr class="odd">
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
