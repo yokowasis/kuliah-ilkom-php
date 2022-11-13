@@ -1,0 +1,81 @@
+<html class="no-js" lang="en">
+<head>
+    <title>FORM PPDB MAHASISWA MUHAMMADIYAH</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    <style>
+        body {
+            background: #EECDA3;
+            background: -webkit-linear-gradient(to top, #EF629F, #EECDA3);
+            background: linear-gradient(to top, #EF629F, #EECDA3);
+        }
+        .container {
+            max-width: 550px;
+        }
+        .has-error label,
+        .has-error input,
+        .has-error textarea {
+            color: red;
+            border-color: red;
+        }
+        .list-unstyled li {
+            font-size: 13px;
+            padding: 4px 0 0;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <h5 class="card-header text-center">FORM PENDAFTARAN MAHASISWA BARU UNIVERSITAS MUHAMMADIYAH BIMA<h5>
+            <div class="card-body">
+                <form role="form" data-toggle="validator">
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" class="form-control" name="nama" maxlength="10" minlength="3"
+                            pattern="^[a-zA-Z0-9_.-]*$" id="nama" placeholder="Nama Lengkap" required>
+                        <!-- Error -->
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tempat, Tgl. lahir</label>
+                        <input type="text" class="form-control" name="ttl" maxlength="10" minlength="3"
+                            pattern="^[a-zA-Z0-9_.-]*$" id="ttl" placeholder="Tempat, Tgl. Lahir" required>
+                        <!-- Error -->
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Alamat</label>
+                        <textarea class="form-control" data-error="Alamat" id="alamat"
+                            placeholder="Alamat Lengkap" required=""></textarea>
+                        <!-- Error -->
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Asal Sekolah</label>
+                        <input type="text" class="form-control" name="asalsekolah" maxlength="10" minlength="3"
+                            pattern="^[a-zA-Z0-9_.-]*$" id="ttl" placeholder="asalsekolah" required>
+                        <!-- Error -->
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Jurusan yang dipilih</label>
+                        <select id="jurusan" class="form-control">
+                          <option value="Ilmu Komputer">Ilmu Komputer</option>
+                          <option value="Ilmu Hukum">Ilmu Hukum</option>
+                          <option value="Kewirausahaan">Kewirausahaan</option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
