@@ -1,5 +1,10 @@
 <?php
 
+if ($_POST['name'] && $_POST['email']) {
+} else {
+  header('Location: empty.php');
+}
+
 echo $_POST['name'];
 echo "<br/>";
 echo $_POST['email'];
