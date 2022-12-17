@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bs4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Kontak</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form action="simpan_kontak.php" method="POST">
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                name="nama"
+                placeholder="Masukkan nama"
+              />
+            </div>
+            <div class="form-group">
+              <label for="jkel">Jenis Kelamin</label>
+              <input
+                type="text"
+                class="form-control"
+                id="jkel"
+                name="jkel"
+                placeholder="Masukkan Jenis Kelamin"
+              />
+            </div>
+            <div class="form-group">
+              <label for="nama">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Masukkan Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="nama">Alamat</label>
+              <input
+                type="text"
+                class="form-control"
+                id="alamat"
+                name="alamat"
+                placeholder="Masukkan Alamat"
+              />
+            </div>
+            <div class="form-group">
+              <label for="nama">Kota</label>
+              <input
+                type="text"
+                class="form-control"
+                id="kota"
+                name="kota"
+                placeholder="Masukkan Kota"
+              />
+            </div>
+            <div class="form-group">
+              <label for="nama">Pesan</label>
+              <input
+                type="text"
+                class="form-control"
+                id="pesan"
+                name="pesan"
+                placeholder="Masukkan Pesan"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
