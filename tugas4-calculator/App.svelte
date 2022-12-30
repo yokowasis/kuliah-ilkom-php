@@ -76,7 +76,9 @@
     <div>
       <h3 style="margin-top: 0;">Masukkan Nilai</h3>
       <input type="text" placeholder="Masukkan Nilai" bind:value={nilai} />
-      <p>Predikat Anda Adalah : {predikat}</p>
+      <p>
+        Predikat Anda Adalah : <br /><b style="color: green;">{predikat}</b>
+      </p>
     </div>
     <div>
       <table>
